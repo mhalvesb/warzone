@@ -19,6 +19,11 @@ export const GunsBox = styled.div`
 
 export const Guns = styled.div`
         text-align: center;
+
+    h2{
+
+    }
+
     h4{
         margin: 0;
         padding: 0;
@@ -27,6 +32,7 @@ export const Guns = styled.div`
     ul{
         list-style-type: none;
         padding: 0;
+        margin: 0px 5px;
     }
 
     li{
@@ -35,7 +41,7 @@ export const Guns = styled.div`
         border: 1px solid #fff;
         margin:0;
         padding: 10px;
-        margin: 5px 0px;
+        margin: 10px 0px;
         cursor: pointer;
     }
 
