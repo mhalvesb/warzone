@@ -1,15 +1,19 @@
-
 import { Banner, Descriptions, Guns, GunsBox, LeftButton, MainComponent, RightButton, WarzoneDiv, WarzoneText } from "./Main.styles"
 
+
+import leftArrow from "../../assets/icons/left-arrow.png";
+import rightArrow from "../../assets/icons/right-arrow.png";
+
+
+
 export function Main(){
+
+    
+
     return(
         <MainComponent>
-
             <Banner>
-                
             </Banner>
-
-
             <Descriptions>
                 <WarzoneDiv>
                     <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/lat3.png"></img>
@@ -19,7 +23,6 @@ export function Main(){
                     </WarzoneText>
                 </WarzoneDiv>
                 <ul>
-                    
                         <li>All</li>
                         <li>AR</li>
                         <li>BR</li>
@@ -27,7 +30,6 @@ export function Main(){
                         <li>Shotgun</li>
                         <li>Rifle</li>
                         <li>Handgun</li>
-                    
                 </ul>
             </Descriptions>
 
@@ -35,7 +37,7 @@ export function Main(){
             <Guns>
                     <h2>TOP 10 GUNS</h2>
                     <ul>
-                        <LeftButton>Left</LeftButton>
+                        <LeftButton><img src={leftArrow}></img></LeftButton>
                         <li>
                             <h3>DG 58-LSW</h3>
                             <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/dg-58-lsw-wzstats-4a5ba1/gunFullDisplay"></img>
@@ -54,9 +56,9 @@ export function Main(){
                         </li>
                         <li> 
                             <h3>DG 58-LSW</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/dg-58-lsw-wzstats-4a5ba1/gunFullDisplay"></img>
+                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay"></img>
                         </li>
-                        <RightButton>Right</RightButton>
+                        <RightButton><img src={rightArrow}></img></RightButton>
                     </ul>
                 </Guns>
                 <Guns>

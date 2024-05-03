@@ -52,6 +52,10 @@ export const Descriptions = styled.div`
         background-color: #111;
         cursor: pointer;
         border-radius: 5px;
+        transition: 0.2s;
+        &:hover{
+            background-color: rgba( 255, 140, 0, 0.95);
+        }
     }
 `;
 
@@ -127,12 +131,15 @@ export const Guns = styled.div`
 
 
     li{
-        color: #fff;
-        background-color: #fff;
-        font-weight: 800;
-        margin:0;
-        padding: 10px;
+        position: relative;
+        width: 320px;
         margin: 10px 0px;
+        height: auto;
+        color: #fff;
+        background-color: #1e2022;
+        font-weight: 800;
+        border-radius: 5px;
+        padding: 10px;
         cursor: pointer;
     }
 
@@ -141,18 +148,44 @@ export const Guns = styled.div`
     }
 `;
 
-export const LeftButton = styled.button`
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 50px;
-    
+
+
+export const leftRightButtons = styled.button`
+position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.15);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    transition: 0.2s;
+    &:hover{
+        background-color: rgba( 255, 140, 0, 0.95);
+    }
 `;
 
-export const RightButton = styled.button`
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 50px;
-    right: 10px;
+
+export const LeftButton = styled(leftRightButtons)`
+   left: 15px;
+    
+
+    img{
+        width: 30px;
+    }
+
+`;
+
+export const RightButton = styled(leftRightButtons)`
+    right: 15px;
+    
+
+    img{
+        width: 30px;
+    }
 `;
