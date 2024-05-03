@@ -92,7 +92,8 @@ export const GunsBox = styled.div`
 `;
 
 export const Guns = styled.div`
-        text-align: center;
+    width: 100%;
+        text-align: flex-start;
         margin: 5px 5px;
 
     h2{
@@ -100,7 +101,7 @@ export const Guns = styled.div`
         font-weight: 600;
         background-color: #35383d;
         border-radius: 10px 10px 0px 0px;
-        padding: 10px 0px;
+        padding: 10px 20px;
         margin: 10px 5px;
     }
 
@@ -110,37 +111,24 @@ export const Guns = styled.div`
     }
 
     ul{
+        display: flex;
+        gap: 0.725rem;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
         list-style-type: none;
-        margin: 0px 5px;
-        max-height: 500px;
-        padding: 10px 15px;
+        padding: 0px;
+        margin: 10px 5px;
+        padding: 0px 10px;
         border-radius: 0px 0px 10px 10px;
-        overflow-y: scroll;
         background-color: #35383d;
     }
 
-    ul::-webkit-scrollbar{
-        width: 5px;   
-    }
-    ul::-webkit-scrollbar-track{
-        background: black;
-        border-radius: 10px;
-        margin: 1px 0px;
-    }
 
-    ul::-webkit-scrollbar-thumb{
-        background: orange;
-        border-radius: 10px;
-        margin: 1px 0px;
-    }
-
-    ul::-webkit-scrollbar-corner{
-        
-    }
     li{
         color: #fff;
+        background-color: #fff;
         font-weight: 800;
-        border: 1px solid #fff;
         margin:0;
         padding: 10px;
         margin: 10px 0px;
@@ -150,4 +138,20 @@ export const Guns = styled.div`
     img{
         width: 300px;
     }
+`;
+
+export const LeftButton = styled.button`
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    
+`;
+
+export const RightButton = styled.button`
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    right: 0;
 `;
