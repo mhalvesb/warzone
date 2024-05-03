@@ -4,7 +4,6 @@ import styled from "styled-components";
 
 
 export const MainComponent = styled.main`
-height: 100vh;
 background-color: #333;
 
 
@@ -15,6 +14,7 @@ background-color: #333;
 export const GunsBox = styled.div`
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 `;
 
 export const Guns = styled.div`
@@ -31,8 +31,10 @@ export const Guns = styled.div`
 
     ul{
         list-style-type: none;
-        padding: 0;
+        padding: 0px 20px;
         margin: 0px 5px;
+        max-height: 500px;
+        overflow-y: scroll;
     }
 
     li{
