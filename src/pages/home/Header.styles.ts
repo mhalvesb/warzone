@@ -2,24 +2,30 @@ import styled from "styled-components";
 
 
 export const HeaderComponent = styled.header`
-    display: flex;
-    background-color: #999;
+    background-color: #222;
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
+    color: #111;
     gap: 2rem;
     padding: 10px 0px;
     overflow: hidden;
 
     h1{
+        color: #fff;
         margin: 0;
         padding: 0;
     }
 
     img{
-        width: 200px;
+        width: 100px;
         height: auto;
     }
 
+`;
+
+
+export const HeaderContent = styled.div`
+    width: calc(70vw);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
 `;

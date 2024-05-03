@@ -1,12 +1,33 @@
 
-import { Guns, GunsBox, MainComponent } from "./Main.styles"
+import { Banner, Descriptions, Guns, GunsBox, MainComponent, WarzoneDiv, WarzoneText } from "./Main.styles"
 
 export function Main(){
     return(
         <MainComponent>
-            <div>
-                <p>Discover the best loadouts in Warzone Season 3. Get the Warzone META</p>
-            </div>
+
+            <Banner>
+                
+            </Banner>
+
+
+            <Descriptions>
+                <WarzoneDiv>
+                    <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/lat3.png"></img>
+                    <WarzoneText>
+                        <h3>Warzone Best Loadouts</h3>
+                        <h6>Last update 3 minutes ago</h6>
+                    </WarzoneText>
+                </WarzoneDiv>
+                <ul>
+                        <li>All</li>
+                        <li>AR</li>
+                        <li>BR</li>
+                        <li>SMG</li>
+                        <li>Shotgun</li>
+                        <li>Rifle</li>
+                        <li>Handgun</li>
+                </ul>
+            </Descriptions>
 
             <GunsBox>
             <Guns>
