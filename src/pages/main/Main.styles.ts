@@ -111,6 +111,7 @@ export const Guns = styled.div`
     }
 
     ul{
+        position: relative;
         display: flex;
         gap: 0.725rem;
         align-items: center;
@@ -153,5 +154,5 @@ export const RightButton = styled.button`
     display: block;
     width: 50px;
     height: 50px;
-    right: 0;
+    right: 10px;
 `;
