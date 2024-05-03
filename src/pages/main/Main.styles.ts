@@ -19,6 +19,7 @@ export const GunsBox = styled.div`
 
 export const Guns = styled.div`
         text-align: center;
+        
 
     h2{
 
@@ -35,8 +36,25 @@ export const Guns = styled.div`
         margin: 0px 5px;
         max-height: 500px;
         overflow-y: scroll;
+        
     }
 
+    ul::-webkit-scrollbar{
+        width: 5px;   
+    }
+    ul::-webkit-scrollbar-track{
+        background: black;
+        border-radius: 10px;
+    }
+
+    ul::-webkit-scrollbar-thumb{
+        background: orange;
+        border-radius: 10px;
+    }
+
+    ul::-webkit-scrollbar-corner{
+        
+    }
     li{
         color: #fff;
         font-weight: 800;
