@@ -116,10 +116,9 @@ export const Guns = styled.div`
 
     ul{
         position: relative;
+        gap: 12px;
         display: flex;
-        gap: 0.725rem;
         align-items: center;
-        justify-content: space-between;
         overflow: hidden;
         list-style-type: none;
         padding: 0px;
@@ -135,11 +134,13 @@ export const Guns = styled.div`
         width: 320px;
         margin: 10px 0px;
         height: auto;
+        margin-left: 0px;
         color: #fff;
         background-color: #1e2022;
         font-weight: 800;
         border-radius: 5px;
         padding: 10px;
+        transition: 0.2s;
         cursor: pointer;
     }
 
@@ -188,4 +189,10 @@ export const RightButton = styled(leftRightButtons)`
     img{
         width: 30px;
     }
+`;
+
+
+
+export const List = styled.li`
+display: none
 `;
