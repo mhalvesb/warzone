@@ -41,7 +41,7 @@ export const LeftButton = styled(leftRightButtons)`
 `;
 
 export const RightButton = styled(leftRightButtons)`
-    right: 15px;
+    right: 9px;
 
     img{
         width: 30px;

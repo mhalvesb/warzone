@@ -106,7 +106,7 @@ export const Guns = styled.div`
         background-color: #35383d;
         border-radius: 10px 10px 0px 0px;
         padding: 10px 20px;
-        margin: 10px 5px;
+        margin: 10px 0px;
     }
 
     h4{
@@ -122,10 +122,21 @@ export const Guns = styled.div`
         overflow: hidden;
         list-style-type: none;
         padding: 0px;
-        margin: 10px 2px;
+        margin: 10px 0px;
         padding: 0px 0px;
         border-radius: 0px 0px 10px 10px;
         background-color: #35383d;
+        width: 1334px;
+        button{
+                opacity: 0.1;
+            }
+       
+
+        &:hover{
+            button{
+                opacity: 1;
+            }
+        }
     }
 
 
@@ -142,6 +153,7 @@ export const Guns = styled.div`
         padding: 10px;
         transition: 0.2s;
         cursor: pointer;
+        
     }
 
     img{
@@ -149,12 +161,43 @@ export const Guns = styled.div`
     }
 `;
 
-
-
-
-
-
-
 export const List = styled.li`
-display: none
+display: none;
 `;
+
+
+export const Tier = styled.div`
+    text-align: center;
+    border-radius: 9999px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    p{
+        font-weight: 900;
+        padding: 0;
+        margin: 0;
+    }
+`;
+
+export const Stier = styled(Tier)`
+    background-color: #ff7f7f;
+    
+
+   
+`;
+
+export const ATier = styled(Tier)`
+    background-color: #ffbf7f;
+`;
+
+
+export const BTier = styled(Tier)`
+    background-color: #ffff7f;
+`;
+
