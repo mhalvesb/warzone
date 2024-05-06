@@ -6,21 +6,16 @@ import BP50 from "../../assets/images/BP50.jpg";
 import XButton from "../../assets/icons/remove.png";
 import { useEffect, useState } from "react";
 
-type GunsProps ={
-    onClose: boolean
-}
 
-
-
-export function GunsDetails({ callFunction } : {callFunction: () => void}){
-    const [visible, setVisible] = useState(false);
+export function GunsDetails({ callFunction}: {callFunction: () => void}){
+    
     
     function handleVisibility(){
         callFunction();
     }
 
     return(
-        <DetailContainer >
+        <DetailContainer>
             <DetailBox>
                 <XButtons onClick={() => handleVisibility()} src={XButton}></XButtons>
                 <h1>LOCKWOOD 680</h1>

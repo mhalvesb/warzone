@@ -23,6 +23,20 @@ export const DetailContainer = styled.div`
     top: 0;
     right: 0;
     transition: 0.2s;
+    animation-name: blur;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+    @keyframes blur{
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+        }
+
+    }
 `;
 
 export const XButtons = styled.img`
