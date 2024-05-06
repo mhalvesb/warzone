@@ -1,12 +1,15 @@
-import { ATier, Banner, Descriptions, Guns, GunsBox, List, MainComponent,Stier,WarzoneDiv, WarzoneText } from "./Main.styles"
+import { ATier, Banner, Descriptions, Guns, GunsBox, ImgGuns, List, Logo, MainComponent,Stier,WarzoneDiv, WarzoneText } from "./Main.styles"
 
 import { LeftButton } from "./functions/SButtons.style";
+
+import { GunsDetails } from "../../components/gunsdetails/GunsDetails";
 
 import { SettingButton } from "./functions/SButtons";
 
 export function Main(){    
     return(
         <MainComponent>
+            <GunsDetails/>
             <Banner>
             </Banner>
             <Descriptions>
@@ -34,54 +37,56 @@ export function Main(){
                     <ul>
                         <SettingButton></SettingButton>
                         <li>
+                            
                             <Stier><p>S+</p></Stier>
                             <h3>DG 58-LSW</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/dg-58-lsw-wzstats-48f81e/gunFullDisplay"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/dg-58-lsw-wzstats-48f81e/gunFullDisplay"></ImgGuns>
                         </li>
                         <li>
                             <Stier><p>S</p></Stier>
                             <h3>Striker 9</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/striker-9-bold/gunDisplayLoadouts"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/striker-9-bold/gunDisplayLoadouts"></ImgGuns>
+                            <Logo src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1156eb6d-fb3d-49a1-848c-6fd3ab609fa7/dfpl99f-61415288-f2f5-4e5b-9386-4cccd6f49bad.png/v1/fill/w_1280,h_634/call_of_duty__modern_warfare_iii___logo__2023__by_wesleyvianen_dfpl99f-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjM0IiwicGF0aCI6IlwvZlwvMTE1NmViNmQtZmIzZC00OWExLTg0OGMtNmZkM2FiNjA5ZmE3XC9kZnBsOTlmLTYxNDE1Mjg4LWYyZjUtNGU1Yi05Mzg2LTRjY2NkNmY0OWJhZC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.qrq4Z6I89BAY21aJrWZrjh83K-1NK9BwK8DqQ4XfbTU"></Logo>
                         </li>
                         <li>
                             <Stier><p>S</p></Stier>
                             <h3>MCW</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mcw-bold/gunDisplayLoadouts"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mcw-bold/gunDisplayLoadouts"></ImgGuns>
                         </li>
                         <li>
                             <Stier><p>S</p></Stier>
                             <h3>SVA 545</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/sva-545-bold/gunDisplayLoadouts"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/sva-545-bold/gunDisplayLoadouts"></ImgGuns>
                         </li>
                         <li> 
                             <Stier><p>S</p></Stier>
                             <h3>SOA Subverter</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/soa-subverter-bold/gunDisplayLoadouts"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/soa-subverter-bold/gunDisplayLoadouts"></ImgGuns>
                         </li>
                         <li> 
                             <Stier><p>S</p></Stier>
                             <h3>Mors</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-bold/gunDisplayLoadouts"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-bold/gunDisplayLoadouts"></ImgGuns>
                         </li>
                         <li>
                             <ATier><p>A</p></ATier>
                             <h3>Pulemyot 762</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/pulemyot-762-bold/gunDisplayLoadouts"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/pulemyot-762-bold/gunDisplayLoadouts"></ImgGuns>
                         </li>
                         <li>
                             <ATier><p>A</p></ATier>
                             <h3>WSP 9</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/wsp-9-bold/gunDisplayLoadouts"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/wsp-9-bold/gunDisplayLoadouts"></ImgGuns>
                         </li>
                         <li> 
                             <ATier><p>A</p></ATier>
                             <h3>BP50</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/bp50-bold/gunDisplayLoadouts"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/bp50-bold/gunDisplayLoadouts"></ImgGuns>
                         </li>
                         <li>
                             <ATier><p>A</p></ATier> 
                             <h3>MTZ-556</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mtz-556-bold/gunDisplayLoadouts"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mtz-556-bold/gunDisplayLoadouts"></ImgGuns>
                         </li>
                         
                     </ul>
@@ -92,31 +97,31 @@ export function Main(){
                     <SettingButton></SettingButton>
                         <li>
                             <h3>DG 58-LSW</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/dg-58-lsw-wzstats-4a5ba1/gunFullDisplay"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/dg-58-lsw-wzstats-4a5ba1/gunFullDisplay"></ImgGuns>
                         </li>
                         <li>
                             <h3>DG 58-LSW</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/dg-58-lsw-wzstats-4a5ba1/gunFullDisplay"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/dg-58-lsw-wzstats-4a5ba1/gunFullDisplay"></ImgGuns>
                         </li>
                         <li>
                             <h3>DG 58-LSW</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/dg-58-lsw-wzstats-4a5ba1/gunFullDisplay"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/dg-58-lsw-wzstats-4a5ba1/gunFullDisplay"></ImgGuns>
                         </li>
                         <li> 
                             <h3>DG 58-LSW</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/dg-58-lsw-wzstats-4a5ba1/gunFullDisplay"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/dg-58-lsw-wzstats-4a5ba1/gunFullDisplay"></ImgGuns>
                         </li>
                         <li> 
                             <h3>DG 58-LSW</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay"></ImgGuns>
                         </li>
                         <li> 
                             <h3>DG 58-LSW</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay"></ImgGuns>
                         </li>
                         <li> 
                             <h3>DG 58-LSW</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay"></ImgGuns>
                         </li>
                     </ul>
                 </Guns>
@@ -126,27 +131,27 @@ export function Main(){
                     <SettingButton/>
                         <li>
                             <h3>SVA 545</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/pulemyot-762-wzstats-ca92ee/gunFullDisplay"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/pulemyot-762-wzstats-ca92ee/gunFullDisplay"></ImgGuns>
                         </li>
                         <li>
                             <h3>SVA 545</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/pulemyot-762-wzstats-ca92ee/gunFullDisplay"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/pulemyot-762-wzstats-ca92ee/gunFullDisplay"></ImgGuns>
                         </li>
                         <li> 
                             <h3>SVA 545</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/pulemyot-762-wzstats-ca92ee/gunFullDisplay"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/pulemyot-762-wzstats-ca92ee/gunFullDisplay"></ImgGuns>
                             </li>
                         <li> 
                             <h3>SVA 545</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/pulemyot-762-wzstats-ca92ee/gunFullDisplay"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/pulemyot-762-wzstats-ca92ee/gunFullDisplay"></ImgGuns>
                         </li>
                         <li> 
                             <h3>SVA 545</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/pulemyot-762-wzstats-ca92ee/gunFullDisplay"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/pulemyot-762-wzstats-ca92ee/gunFullDisplay"></ImgGuns>
                         </li>
                         <li> 
                             <h3>SVA 545</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/pulemyot-762-wzstats-ca92ee/gunFullDisplay"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/pulemyot-762-wzstats-ca92ee/gunFullDisplay"></ImgGuns>
                         </li>
                     </ul>
                 </Guns>
@@ -157,27 +162,27 @@ export function Main(){
                     <SettingButton></SettingButton>
                         <li>
                             <h3>Mors</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></ImgGuns>
                         </li>
                         <li>
                             <h3>Mors</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></ImgGuns>
                         </li>
                         <li>
                             <h3>Mors</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></ImgGuns>
                         </li>
                         <li>
                             <h3>Mors</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></ImgGuns>
                         </li>
                         <li>
                             <h3>Mors</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></ImgGuns>
                         </li>
                         <li>
                             <h3>Mors</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></ImgGuns>
                         </li>
                     </ul>
                 </Guns>
@@ -188,19 +193,19 @@ export function Main(){
                     <SettingButton></SettingButton>
                         <li>
                             <h3>Mors</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></ImgGuns>
                         </li>
                         <li>
                             <h3>Mors</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></ImgGuns>
                         </li>
                         <li>
                             <h3>Mors</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></ImgGuns>
                         </li>
                         <li>
                             <h3>Mors</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></ImgGuns>
                         </li>
                     </ul>
                 </Guns>
@@ -210,19 +215,19 @@ export function Main(){
                     <SettingButton></SettingButton>
                         <li>
                             <h3>Mors</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></ImgGuns>
                         </li>
                         <li>
                             <h3>Mors</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></ImgGuns>
                         </li>
                         <li>
                             <h3>Mors</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></ImgGuns>
                         </li>
                         <li>
                             <h3>Mors</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></ImgGuns>
                         </li>
                     </ul>
                 </Guns>
@@ -232,19 +237,19 @@ export function Main(){
                     <SettingButton></SettingButton>
                         <li>
                             <h3>Mors</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></ImgGuns>
                         </li>
                         <li>
                             <h3>Mors</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></ImgGuns>
                         </li>
                         <li>
                             <h3>Mors</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></ImgGuns>
                         </li>
                         <li>
                             <h3>Mors</h3>
-                            <img src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></img>
+                            <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mors-wzstats-4ac79b/gunFullDisplay" alt="striker 9"></ImgGuns>
                         </li>
                     </ul>
                 </Guns>

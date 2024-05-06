@@ -153,12 +153,14 @@ export const Guns = styled.div`
         padding: 10px;
         transition: 0.2s;
         cursor: pointer;
+
+        &:hover{
+            background-color: rgba( 0, 0, 0, 0.25);
+        }
         
     }
 
-    img{
-        width: 300px;
-    }
+    
 `;
 
 export const List = styled.li`
@@ -199,5 +201,22 @@ export const ATier = styled(Tier)`
 
 export const BTier = styled(Tier)`
     background-color: #ffff7f;
+`;
+
+
+export const Logo = styled.img`
+    width: 50px;
+    background-color: #555;
+    padding: 5px 10px;
+    border-radius: 10px;
+    z-index: 1;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+`;
+
+
+export const ImgGuns = styled.img`
+width: 300px;
 `;
 
