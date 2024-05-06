@@ -1,11 +1,29 @@
-import { DetailBox, DetailContainer, DetailContent, Detailed, ImgDetails } from "./Guns.styles";
+import { DetailBox, DetailContainer, DetailContent, Detailed, ImgDetails, XButtons, } from "./Guns.styles";
+
+import styled from "styled-components";
 
 import BP50 from "../../assets/images/BP50.jpg";
+import XButton from "../../assets/icons/remove.png";
+import { useEffect, useState } from "react";
 
-export function GunsDetails(){
+type GunsProps ={
+    onClose: boolean
+}
+
+
+
+export function GunsDetails({ callFunction } : {callFunction: () => void}){
+    const [visible, setVisible] = useState(false);
+    
+    function handleVisibility(){
+        callFunction();
+    }
+
     return(
-        <DetailContainer>
+        <DetailContainer >
             <DetailBox>
+                <XButtons onClick={() => handleVisibility()} src={XButton}></XButtons>
+                <h1>LOCKWOOD 680</h1>
             <ImgDetails src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/dg-58-lsw-wzstats-48f81e/gunFullDisplay"></ImgDetails>
                 <DetailContent>
                     <Detailed>

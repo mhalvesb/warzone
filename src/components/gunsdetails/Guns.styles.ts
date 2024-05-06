@@ -22,15 +22,32 @@ export const DetailContainer = styled.div`
     backdrop-filter: blur(10px);
     top: 0;
     right: 0;
+    transition: 0.2s;
+`;
+
+export const XButtons = styled.img`
+width: 25px;
+position: absolute;
+right: 10px;
+cursor: pointer;
 `;
 
 
 export const DetailBox = styled.div`
     display: flex;
+    position: relative;
+    height: 500px;
+    border-radius: 5px;
     flex-direction: column;
-    background-color: #222;
+    background-color: rgba(42, 44, 48, 0.6);
     border: 1px solid orange;
     padding: 10px;
+    h1{
+        margin: 0;
+        padding: 0;
+        margin: 0 auto;
+        color: #fff;
+    }
 `;
 
 export const DetailContent = styled.div`
@@ -43,6 +60,7 @@ export const DetailContent = styled.div`
 export const Detailed = styled.div`
     background-color: rgba(230,126, 4, 0.1);
     border: 1px solid orange;
+    border-radius: 2px;
     border-bottom: 1px solid orange;
     padding: 10px 10px 10px 5px;
     margin: 5px 2px;

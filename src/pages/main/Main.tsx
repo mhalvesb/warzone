@@ -5,11 +5,20 @@ import { LeftButton } from "./functions/SButtons.style";
 import { GunsDetails } from "../../components/gunsdetails/GunsDetails";
 
 import { SettingButton } from "./functions/SButtons";
+import { useState } from "react";
 
 export function Main(){    
+
+    const [visible, setVisible] = useState(false);
+
+    function toggleVisibility(){
+        setVisible(!visible);
+        console.log("ok");
+    }
+
     return(
         <MainComponent>
-            <GunsDetails/>
+            {visible && <GunsDetails callFunction={() => toggleVisibility()}/>}
             <Banner>
             </Banner>
             <Descriptions>
@@ -36,8 +45,7 @@ export function Main(){
                     <h2>TOP 10 GUNS</h2>
                     <ul>
                         <SettingButton></SettingButton>
-                        <li>
-                            
+                        <li onClick={() => toggleVisibility()}>
                             <Stier><p>S+</p></Stier>
                             <h3>DG 58-LSW</h3>
                             <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/dg-58-lsw-wzstats-48f81e/gunFullDisplay"></ImgGuns>

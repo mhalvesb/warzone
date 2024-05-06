@@ -8,7 +8,7 @@ export function Rotas(){
          <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Main/>}/>
-                <Route path="/guns" element={<GunsDetails/>}></Route>
+                <Route path="/guns" element={<GunsDetails callFunction={() => {}}/>}></Route>
             </Routes>
          </BrowserRouter>   
     )
