@@ -10,15 +10,20 @@ import { useState } from "react";
 export function Main(){    
 
     const [visible, setVisible] = useState(false);
-
-    function toggleVisibility(){
+    const [gunName, setGunName] = useState("");
+    function toggleVisibility(e){
+        if(e){
+            const list = e.target.parentNode;
+            const gunName = list.querySelector("h3").textContent;
+            setGunName(gunName);
+        }
+        
         setVisible(!visible);
-        console.log("ok");
     }
 
     return(
         <MainComponent>
-            {visible && <GunsDetails callFunction={() => toggleVisibility()}/>}
+            {visible && <GunsDetails callFunction={() => toggleVisibility()} gunNames={gunName}/>}
             <Banner>
             </Banner>
             <Descriptions>
@@ -45,28 +50,28 @@ export function Main(){
                     <h2>TOP 10 GUNS</h2>
                     <ul>
                         <SettingButton></SettingButton>
-                        <li onClick={() => toggleVisibility()}>
+                        <li onClick={(e) => toggleVisibility(e)}>
                             <Stier><p>S+</p></Stier>
                             <h3>DG 58-LSW</h3>
                             <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/dg-58-lsw-wzstats-48f81e/gunFullDisplay"></ImgGuns>
                         </li>
-                        <li>
+                        <li onClick={(e) => toggleVisibility(e)}>
                             <Stier><p>S</p></Stier>
                             <h3>Striker 9</h3>
                             <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/striker-9-bold/gunDisplayLoadouts"></ImgGuns>
                             <Logo src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1156eb6d-fb3d-49a1-848c-6fd3ab609fa7/dfpl99f-61415288-f2f5-4e5b-9386-4cccd6f49bad.png/v1/fill/w_1280,h_634/call_of_duty__modern_warfare_iii___logo__2023__by_wesleyvianen_dfpl99f-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjM0IiwicGF0aCI6IlwvZlwvMTE1NmViNmQtZmIzZC00OWExLTg0OGMtNmZkM2FiNjA5ZmE3XC9kZnBsOTlmLTYxNDE1Mjg4LWYyZjUtNGU1Yi05Mzg2LTRjY2NkNmY0OWJhZC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.qrq4Z6I89BAY21aJrWZrjh83K-1NK9BwK8DqQ4XfbTU"></Logo>
                         </li>
-                        <li>
+                        <li onClick={(e) => toggleVisibility(e)}>
                             <Stier><p>S</p></Stier>
                             <h3>MCW</h3>
                             <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/mcw-bold/gunDisplayLoadouts"></ImgGuns>
                         </li>
-                        <li>
+                        <li onClick={(e) => toggleVisibility(e)}>
                             <Stier><p>S</p></Stier>
                             <h3>SVA 545</h3>
                             <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/sva-545-bold/gunDisplayLoadouts"></ImgGuns>
                         </li>
-                        <li> 
+                        <li onClick={(e) => toggleVisibility(e)}> 
                             <Stier><p>S</p></Stier>
                             <h3>SOA Subverter</h3>
                             <ImgGuns src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/soa-subverter-bold/gunDisplayLoadouts"></ImgGuns>

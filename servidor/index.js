@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 
+
+app.use(cors());
 
 
 
@@ -15,3 +18,4 @@ app.get("/", (req, res) =>{
 
 app.listen(8080, () =>{
     console.log("Porta rodando na 8080");
+})

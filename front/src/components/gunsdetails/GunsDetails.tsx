@@ -7,9 +7,52 @@ import XButton from "../../assets/icons/remove.png";
 import { useEffect, useState } from "react";
 
 
-export function GunsDetails({ callFunction}: {callFunction: () => void}){
+import Axios from "axios";
+
+type GunsProps =
+{
+    callFunction: () => void;
+    gunNames: string;
+}
+
+interface GunsData {
+    gunName: string;
+    gunImg: string;
+    gunAttachments: [
+        {
+            attachName: string;
+            attachment: string;
+        }
+    ];
+}
+
+export function GunsDetails({ callFunction, gunNames}: GunsProps){
+    const [dados, setDados] = useState<GunsData[]>([]);
+    const [data, setData] = useState<GunsData | null>(null);
     
     
+
+    
+
+
+    useEffect(() =>{
+            const fetchData = async () =>{
+            const response = await Axios.get("http://localhost:8080/");
+            setDados(response.data);
+            }
+            fetchData();
+    }, []);
+
+
+    useEffect(() =>{
+        dados.map((item, index) =>{
+            if(item.gunName === gunNames){
+                setData(item);
+            }
+        });
+    }, [dados, gunNames]);
+
+
     function handleVisibility(){
         callFunction();
     }
@@ -18,33 +61,21 @@ export function GunsDetails({ callFunction}: {callFunction: () => void}){
         <DetailContainer>
             <DetailBox>
                 <XButtons onClick={() => handleVisibility()} src={XButton}></XButtons>
-                <h1>LOCKWOOD 680</h1>
-            <ImgDetails src="https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/dg-58-lsw-wzstats-48f81e/gunFullDisplay"></ImgDetails>
+                <h1>{data && data.gunName}</h1>
+            <ImgDetails src={data && data.gunImg}></ImgDetails>
                 <DetailContent>
-                    <Detailed>
-                        <p>Cano Pesado Lore-9</p>
-                        <span>Cano</span>
-                    </Detailed>
+                    {data && data.gunAttachments.map((item, index) =>{
+                        return(
+                            <Detailed key={index}>
+                                
+                                <p>{item.attachName}</p>
+                                <span>{item.attachment}</span>
+                            </Detailed>
+                        )
+                    })}
+                    
 
-                    <Detailed>
-                        <p>Silenciador VT-7 SP</p>
-                        <span>Boca</span>
-                    </Detailed>
-
-                    <Detailed>
-                        <p>Projéteis OTAN 5.56</p>
-                        <span>Munição</span>
-                    </Detailed>
-
-                    <Detailed>
-                        <p>Carregador de 45 Projéteis</p>
-                        <span>Carregador</span>
-                    </Detailed>
-
-                    <Detailed>
-                        <p>Fita Aderente TRST</p>
-                        <span>Cabo</span>
-                    </Detailed>
+                    
                 </DetailContent>
             </DetailBox>
                 

@@ -82,6 +82,7 @@ export const Detailed = styled.div`
     flex-direction: column;
     cursor: pointer;
     p{
+        
         color: rgba(230,126, 4, 1);
         text-transform: uppercase;
         margin: 0;
@@ -89,6 +90,7 @@ export const Detailed = styled.div`
     }
 
     span{
+        text-transform: capitalize;
         color: #999;
     }
 `;

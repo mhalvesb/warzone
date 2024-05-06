@@ -4,13 +4,37 @@
         "gunImg": "https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/dg-58-lsw-wzstats-48f81e/gunFullDisplay",
         "gunType": "LMG",
         "gunAttachments": [
-            {
-                "barrel": "WUDI LONG BARREL",
-                "optic": "corio eagleseye 2.5x",
-                "stock": "recoil reduction buttplate",
-                "muzzle": "vt-7 spiritfire suppressor",
-                "underbarrel": "bruen heavy support grip"
-            }
+            
+                {"attachName": "WUDI LONG BARREL",
+                "attachment": "barrel"
+                },
+                {"attachName": "corio eagleseye 2.5x",
+                "attachment": "optic"},
+                {"attachName": "recoil reduction buttplate",
+                "attachment": "stock"
+                },
+                {"attachName": "vt-7 spiritfire suppressor",
+                "attachment": "muzzle"
+                },
+                {"attachName": "bruen heavy support grip",
+                "attachment": "underbarrel"
+                }
+            
+        ]
+    },
+    {
+        "gunName": "Striker 9",
+        "gunImg": "https://imagedelivery.net/BN5t48p9frV5wW3Jpe6Ujw/striker-9-bold/gunDisplayLoadouts",
+        "gunType": "SMG",
+        "gunAttachments": [
+            
+                {"muzzle": "ZEHMN35 COMPENSATED FLASH HIDER"},
+                {"barrel": "STRIKER RECON LONG BARREL"},
+                {"rear grip": "SAKIN ZX GRIP"},
+                {"magazine": "50 ROUND DRUM"},
+                {"underbarrel": "XRK EDGE BW-4 HANDSTOP"}
+            
         ]
     }
+    
 ]
