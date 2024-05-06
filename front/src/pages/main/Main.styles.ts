@@ -97,18 +97,8 @@ export const GunsBox = styled.div`
 
 export const Guns = styled.div`
     width: 100%;
-        text-align: flex-start;
         margin: 5px 5px;
-
-    h2{
-        color: #fff;
-        font-weight: 600;
-        background-color: #35383d;
-        border-radius: 10px 10px 0px 0px;
-        padding: 10px 20px;
-        margin: 10px 0px;
-    }
-
+    
     h4{
         margin: 0;
         padding: 0;
@@ -161,6 +151,26 @@ export const Guns = styled.div`
     }
 
     
+`;
+
+export const TextContainer = styled.div`
+     
+        color: #fff;
+        text-align: center;
+        background-color: #35383d;
+        border-radius: 10px 10px 0px 0px;
+        padding: 10px 20px;
+        margin: 10px 0px;
+
+        h2{
+        font-weight: 900;
+        margin: 0;
+        padding: 0;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
 `;
 
 export const List = styled.li`

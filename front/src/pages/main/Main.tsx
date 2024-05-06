@@ -1,7 +1,7 @@
-import { ATier, Banner, Descriptions, Guns, GunsBox, ImgGuns, List, Logo, MainComponent,Stier,WarzoneDiv, WarzoneText } from "./Main.styles"
+import { ATier, Banner, Descriptions, Guns, GunsBox, ImgGuns, List, Logo, MainComponent,Stier,TextContainer,WarzoneDiv, WarzoneText } from "./Main.styles"
 
 import { LeftButton } from "./functions/SButtons.style";
-
+import React from "react";
 import { GunsDetails } from "../../components/gunsdetails/GunsDetails";
 
 import { SettingButton } from "./functions/SButtons";
@@ -27,13 +27,6 @@ export function Main(){
             <Banner>
             </Banner>
             <Descriptions>
-                <WarzoneDiv>
-                    <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/lat3.png"></img>
-                    <WarzoneText>
-                        <h3>Warzone Best Loadouts</h3>
-                        <h6>Last update 3 minutes ago</h6>
-                    </WarzoneText>
-                </WarzoneDiv>
                 <ul>
                         <li>All</li>
                         <li>AR</li>
@@ -47,7 +40,11 @@ export function Main(){
 
             <GunsBox>
             <Guns>
-                    <h2>TOP 10 GUNS</h2>
+                    <TextContainer>
+                        <h2>TOP 10 GUNS</h2>
+                        <p>The Best Warzone Guns</p>
+                    </TextContainer>
+                    
                     <ul>
                         <SettingButton></SettingButton>
                         <li onClick={(e) => toggleVisibility(e)}>
@@ -105,7 +102,10 @@ export function Main(){
                     </ul>
                 </Guns>
                 <Guns>
-                    <h2>AR</h2>
+                <TextContainer>
+                        <h2>TOP AR</h2>
+                        <p>The Best Warzone AR</p>
+                </TextContainer>
                     <ul>
                     <SettingButton></SettingButton>
                         <li>
@@ -139,7 +139,10 @@ export function Main(){
                     </ul>
                 </Guns>
                 <Guns>
-                    <h2>BR</h2>
+                <TextContainer>
+                        <h2>TOP BR</h2>
+                        <p>The Best Warzone BR</p>
+                </TextContainer>
                     <ul>
                     <SettingButton/>
                         <li>

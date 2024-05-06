@@ -1,7 +1,7 @@
 import { DetailBox, DetailContainer, DetailContent, Detailed, ImgDetails, XButtons, } from "./Guns.styles";
 
 import styled from "styled-components";
-
+import React from "react";
 import BP50 from "../../assets/images/BP50.jpg";
 import XButton from "../../assets/icons/remove.png";
 import { useEffect, useState } from "react";
@@ -67,7 +67,6 @@ export function GunsDetails({ callFunction, gunNames}: GunsProps){
                     {data && data.gunAttachments.map((item, index) =>{
                         return(
                             <Detailed key={index}>
-                                
                                 <p>{item.attachName}</p>
                                 <span>{item.attachment}</span>
                             </Detailed>
