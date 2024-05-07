@@ -27,9 +27,14 @@ export const Descriptions = styled.div`
     width: 70vw;
     margin: 50px 0px;
     background-color: #2A2C30;
-    padding: 10px 10px;
-    border-radius: 10px 10px 0px 0px;
     text-align: flex-start;
+    max-height: 0px;
+    overflow: hidden;
+    animation-name: descAnim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+
     p{
         text-align: center;
         color: #fff;
@@ -41,10 +46,12 @@ export const Descriptions = styled.div`
         width: 200px;
     }
     ul{
+        
         list-style-type: none;
         display: flex;
         gap: 0.5rem;
         color: #fff;
+        
     }
 
     li{
@@ -55,6 +62,19 @@ export const Descriptions = styled.div`
         transition: 0.2s;
         &:hover{
             background-color: rgba( 255, 140, 0, 0.95);
+        }
+    }
+
+    @keyframes descAnim {
+        0%{
+            max-height: 0px;
+            
+        }
+
+        100%{
+            padding: 10px 10px;
+            border-radius: 10px 10px 0px 0px;
+            max-height: 91px;
         }
     }
 `;
@@ -117,6 +137,12 @@ export const Guns = styled.div`
         border-radius: 0px 0px 10px 10px;
         background-color: #35383d;
         width: 1334px;
+
+        animation-name: ulAnim;
+        animation-duration: 1s;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+
         button{
                 opacity: 0.1;
             }
@@ -125,6 +151,16 @@ export const Guns = styled.div`
         &:hover{
             button{
                 opacity: 1;
+            }
+        }
+
+        @keyframes ulAnim {
+            0%{
+                max-width: 0px;
+            }
+
+            100%{
+                max-width: 1334px;
             }
         }
     }
@@ -161,7 +197,7 @@ export const TextContainer = styled.div`
         border-radius: 10px 10px 0px 0px;
         padding: 10px 20px;
         margin: 10px 0px;
-
+        opacity: 0;
         h2{
         font-weight: 900;
         margin: 0;
@@ -170,6 +206,21 @@ export const TextContainer = styled.div`
         p{
             margin: 0;
             padding: 0;
+        }
+
+        animation-name: textAnim;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+
+        @keyframes textAnim {
+            0%{
+                opacity: 0;
+            }
+
+            100%{
+                opacity: 1;
+            }
         }
 `;
 
